@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formuario</title>
+	<style>
+<body>
+      /* Estilos opcionales para mejorar la apariencia */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 40px;
+    }
+    form {
+      max-width: 480px;
+      background: white;
+      padding: 20px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    }
+    fieldset {
+      border: none;
+      padding: 0;
+      margin-bottom: 15px;
+    }
+    legend {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+    .form-group {
+      margin-bottom: 12px;
+    }
+    label, .form-group small {
+      display: block;
+      margin-bottom: 4px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #999;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    textarea {
+      resize: vertical;
+    }
+    input[type="checkbox"] {
+      margin-right: 6px;
+    }
+    .button-group {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 18px;
+      border: none;
+      border-radius: 4px;
+      margin-right: 8px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button[type="reset"] {
+      background: #777;
+      color: white;
+    }
+    button[type="submit"] {
+      background: #0077CC;
+      color: white;
+    }
+    button[type="submit"]:hover {
+      background: #005FAB;
+    }
+  </style>
+</head>
+<body>
+
+<form action="/ruta-de-tu-backend" method="post" novalidate>
+  <fieldset>
+    <legend>Formulario de Contacto</legend>
+
+    <div class="form-group">
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" placeholder="nombre@correo.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="asunto">Asunto</label>
+      <select id="asunto" name="asunto" required>
+        <option value="">— Selecciona una opción —</option>
+        <option value="consulta">Consulta general</option>
+        <option value="soporte">Soporte técnico</option>
+        <option value="ventas">Información de ventas</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    </div>
+
+    <div class="form-group">
+      <input type="checkbox" id="terminos" name="terminos" required>
+      <label for="terminos">Acepto la política de privacidad</label>
+    </div>
+
+    <div class="button-group">
+      <button type="reset">Limpiar</button>
+      <button type="submit">Enviar</button>
+    </div>
+  </fieldset>
+</form>
+
+</body>
+</html>
+
+
+
+
